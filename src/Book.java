@@ -29,7 +29,8 @@ public class Book {
 
         @Override
     public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
+            if (this == other) return true;
+            if (other == null || getClass() != other.getClass()) {
             return false;
         }
         Book fantasy1 = (Book) other;
